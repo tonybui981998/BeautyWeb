@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./NavBar.scss";
 import { FaBeer } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { RiShoppingBasketFill } from "react-icons/ri";
 import { AiOutlineMenuFold } from "react-icons/ai";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const location = useLocation();
   const [searchInput, setSearchInput] = useState(false);
   const [openmenubar, setOpenMenubar] = useState(false);
+  const [activeMenu, setActiveMenu] = useState("/");
+
   // open input search
   const openSearchInput = () => {
     setSearchInput(!searchInput);
@@ -18,11 +22,17 @@ const NavBar = () => {
   const openMenu = () => {
     setOpenMenubar(!openmenubar);
   };
+  useEffect(() => {}, [location]);
   return (
     <div className="navBar">
       <div className="nav-left">GlowBeauty</div>
-      <div className={`nav-middle ${openmenubar ? "open" : ""}`}>
-        <div className="nav-menu">HomePage</div>
+      <div
+        onClick={() => openMenu()}
+        className={`nav-middle ${openmenubar ? "open" : ""}`}
+      >
+        <div className={`nav-menu ${activeMenu === "/" ? "active" : ""} `}>
+          HomePage
+        </div>
         <div className="nav-menu">Serum</div>
         <div className="nav-menu">moisturizing</div>
         <div className="nav-menu">Removal</div>
