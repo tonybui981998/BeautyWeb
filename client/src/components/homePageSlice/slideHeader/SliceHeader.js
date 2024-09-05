@@ -74,7 +74,6 @@ const SliceHeader = () => {
           <img src={slider3} />
         </div>
       </Carousel>
-      ;
     </div>
   );
 };
