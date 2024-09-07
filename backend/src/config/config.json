@@ -1,17 +1,11 @@
 {
   "development": {
-    "username": "Tony",
-    "password": "T0nyP@ssw0rd!",
-    "database": "HTS_Tony",
+    "username": "S2401_Tony",
+    "password": "Bit$21617",
+    "database": "beautywebDB",
     "host": "citizen.manukautech.info",
-    "port": 6306,
     "dialect": "mssql",
-    "dialectOptions": {
-      "options": {
-        "encrypt": true,
-        "trustServerCertificate": true
-      }
-    }
+    "PORT": 6306
   },
   "test": {
     "username": "root",
