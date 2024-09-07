@@ -1,11 +1,11 @@
 {
   "development": {
     "username": "S2401_Tony",
-    "password": "Bit$21617",
+    "password": "fBit$21617",
     "database": "beautywebDB",
     "host": "citizen.manukautech.info",
     "dialect": "mssql",
-    "PORT": 6306
+    "port": 6306
   },
   "test": {
     "username": "root",
