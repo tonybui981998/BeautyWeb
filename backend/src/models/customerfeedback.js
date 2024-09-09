@@ -19,8 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     {
       commentId: DataTypes.INTEGER,
       productId: DataTypes.INTEGER,
-      CustomerComments: DataTypes.TEXT,
-      Rating: DataTypes.INTEGER,
+      customerName: DataTypes.STRING,
+      customerComments: DataTypes.TEXT,
+      rating: DataTypes.INTEGER,
     },
     {
       sequelize,

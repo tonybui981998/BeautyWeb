@@ -18,6 +18,10 @@ module.exports = {
         },
         allowNull: false,
       },
+      customerName: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
       CustomerComments: {
         type: Sequelize.TEXT,
         allowNull: true,
@@ -31,11 +35,11 @@ module.exports = {
         allowNull: true,
       },
       createdAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE,
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE,
       },
     });
