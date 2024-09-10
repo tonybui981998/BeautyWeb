@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./OurProduct.scss";
 import NewProduct from "./NewProduct";
 import OutstandingProduct from "./OutstandingProduct";
@@ -11,6 +11,7 @@ const OurProdcut = () => {
   const mainDisplay = (display) => {
     setourProdcutDisplay(display);
   };
+
   return (
     <div className="ourProduct">
       <div className="ourproduct-title">Our Store</div>

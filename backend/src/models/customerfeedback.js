@@ -10,15 +10,20 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       models.CustomerFeedback.belongsTo(models.Product, {
-        foreignKey: "ProductId",
+        foreignKey: "productID",
       });
       // define association here
     }
   }
   CustomerFeedback.init(
     {
-      commentId: DataTypes.INTEGER,
-      productId: DataTypes.INTEGER,
+      commentId: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+
+      productID: DataTypes.INTEGER,
       customerName: DataTypes.STRING,
       customerComments: DataTypes.TEXT,
       rating: DataTypes.INTEGER,

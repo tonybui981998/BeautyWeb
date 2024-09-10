@@ -4,17 +4,17 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("CustomerFeedbacks", {
-      CommentId: {
+      commentId: {
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
         type: Sequelize.INTEGER,
       },
-      ProductId: {
+      productID: {
         type: Sequelize.INTEGER,
         references: {
           model: "Products",
-          key: "ProductId",
+          key: "productID",
         },
         allowNull: false,
       },
@@ -22,11 +22,11 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true,
       },
-      CustomerComments: {
+      customerComments: {
         type: Sequelize.TEXT,
         allowNull: true,
       },
-      Rating: {
+      rating: {
         type: Sequelize.INTEGER,
         validate: {
           min: 1,

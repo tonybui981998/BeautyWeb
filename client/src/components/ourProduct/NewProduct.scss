@@ -1,0 +1,46 @@
+.newProduct {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  //border: 1px solid red;
+  margin: 0 140px;
+  text-align: center;
+  margin-top: 35px;
+  .product-content {
+    cursor: pointer;
+    background-color: white;
+    // border: 1px solid black;
+    margin: 25px 15px;
+    width: 300px;
+
+    img {
+      width: 260px;
+      height: 280px;
+
+      &:hover {
+        animation: 3s navigationbar;
+      }
+    }
+    .line {
+      border: 1px solid rgb(206, 195, 195);
+      margin-top: 10px;
+    }
+    .product-name {
+      font-weight: 600;
+      font-size: 18px;
+      padding-top: 15px;
+      margin: 0 10px;
+    }
+    .prodcut-description {
+      margin: 0 6px;
+      padding-top: 14px;
+      color: rgb(116, 108, 108);
+    }
+    .product-price {
+      padding-top: 16px;
+      padding-bottom: 14px;
+      font-weight: 550;
+    }
+  }
+}

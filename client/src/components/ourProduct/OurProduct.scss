@@ -1,7 +1,9 @@
 .ourProduct {
-  margin-top: 45px;
+  background-color: #f3f3f3;
+  //margin-top: 45px;
   text-align: center;
   .ourproduct-title {
+    padding-top: 45px;
     font-size: 35px;
     font-weight: 600;
   }
@@ -23,9 +25,11 @@
 // 640
 @media (max-width: 640px) {
   .ourProduct {
-    margin-top: 45px;
+    background-color: #f3f3f3;
+    // margin-top: 45px;
     text-align: center;
     .ourproduct-title {
+      padding-top: 45px;
       font-size: 30px;
       font-weight: 600;
     }
