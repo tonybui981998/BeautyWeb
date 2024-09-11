@@ -38,7 +38,7 @@ const HomeBanner = () => {
         </span>
       </div>
       <div className="banner-botton">
-        <div className="content1">
+        <div className="content1 ">
           <img src={banner3} alt="image" />
           <div className="content1-info">
             <div className="info-title">30% OFF</div>
