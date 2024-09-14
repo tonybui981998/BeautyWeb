@@ -1,0 +1,190 @@
+.footer {
+  background: url("../image//bg-footer.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: fit-content;
+  .footer-main {
+    padding-top: 35px;
+    margin: 0 80px 0 80px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    .footer-right {
+      //  border: 1px solid red;
+      width: 30%;
+      z-index: 1000;
+      .address {
+        width: 80%;
+        // border: 1px solid red;
+        margin: 0 0 10px 30px;
+        font-size: 20px;
+        span {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+    .footer-middle {
+      //border: 1px solid blue;
+      width: 50%;
+      text-align: center;
+      z-index: 1000;
+      .footer-title {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .allicon {
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+        .icons {
+          margin: 0 15px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+    .footer-left {
+      // border: 1px solid green;
+      width: 20%;
+      font-size: 20px;
+      font-weight: 500;
+      z-index: 1000;
+    }
+  }
+  .footer-end {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin: 0 0 0 8%;
+  }
+}
+//1335
+@media (max-width: 1335px) {
+  .footer {
+    background: url("../image//bg-footer.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    .footer-main {
+      padding-top: 35px;
+      margin: 0 80px 0 80px;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      .footer-right {
+        //  border: 1px solid red;
+        width: 30%;
+        z-index: 1000;
+        .address {
+          width: 80%;
+          // border: 1px solid red;
+          margin: 0 0 10px 30px;
+          font-size: 20px;
+          span {
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+      .footer-middle {
+        //border: 1px solid blue;
+        width: 40%;
+        text-align: center;
+        z-index: 1000;
+        .footer-title {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        .allicon {
+          display: flex;
+          padding-top: 20px;
+          justify-content: center;
+          .icons {
+            margin: 0 15px;
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+      }
+      .footer-left {
+        // border: 1px solid green;
+        width: 30%;
+        font-size: 20px;
+        font-weight: 500;
+        z-index: 1000;
+      }
+    }
+    .footer-end {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      margin: 0 0 0 1%;
+    }
+  }
+}
+//850
+@media (max-width: 850px) {
+  .footer {
+    background: url("../image//bg-footer.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    .footer-main {
+      padding-top: 35px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      .footer-right {
+        //  border: 1px solid red;
+        width: 100%;
+        z-index: 1000;
+        // border: 1px solid red;
+        .address {
+          width: 80%;
+          // border: 1px solid red;
+          margin: 0 0 10px 30px;
+          font-size: 20px;
+          span {
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+      .footer-middle {
+        //border: 1px solid blue;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        z-index: 1000;
+        .footer-title {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        .allicon {
+          display: flex;
+          padding-top: 25px;
+          justify-content: center;
+          .icons {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+      }
+      .footer-left {
+        // border: 1px solid green;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+        z-index: 1000;
+        padding-top: 20px;
+        text-align: center;
+      }
+    }
+    .footer-end {
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 15px;
+      margin: 0 0 0 8%;
+    }
+  }
+}

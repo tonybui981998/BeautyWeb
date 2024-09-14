@@ -6,6 +6,7 @@ import OurProdcut from "../ourProduct/OurProdcut";
 import SpecialPrice from "../homePageSlice/specialPrice/SpecialPrice";
 import HomeBanner from "../homePageSlice/homeBanner/HomeBanner";
 import CustomerFeedBack from "../homePageSlice/customerFeedBack/CustomerFeedBack";
+import Footer from "../footer/Footer";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <SpecialPrice />
       <HomeBanner />
       <CustomerFeedBack />
+      <Footer />
     </>
   );
 };
