@@ -33,6 +33,15 @@ const NavBar = () => {
     if (currentlocation === "/contact") {
       setActiveMenu("contact");
     }
+    if (currentlocation === "/serum") {
+      setActiveMenu("serum");
+    }
+    if (currentlocation === "/moisturizing") {
+      setActiveMenu("moisturizing");
+    }
+    if (currentlocation === "/removal") {
+      setActiveMenu("removal");
+    }
   }, [location]);
   return (
     <div className="navBar">
@@ -46,10 +55,36 @@ const NavBar = () => {
             HomePage
           </div>
         </Link>
+        <Link style={{ textDecoration: "none", color: "black" }} to={"/serum"}>
+          {" "}
+          <div className={`nav-menu ${activeMenu === "serum" ? "active" : ""}`}>
+            Serum
+          </div>
+        </Link>
+        <Link
+          style={{ textDecoration: "none", color: "black" }}
+          to={"/moisturizing"}
+        >
+          <div
+            className={`nav-menu ${
+              activeMenu === "moisturizing" ? "active" : ""
+            }`}
+          >
+            moisturizing
+          </div>
+        </Link>
+        <Link
+          style={{ textDecoration: "none", color: "black" }}
+          to={"/removal"}
+        >
+          {" "}
+          <div
+            className={`nav-menu ${activeMenu === "removal" ? "active" : ""}`}
+          >
+            Removal
+          </div>
+        </Link>
 
-        <div className="nav-menu">Serum</div>
-        <div className="nav-menu">moisturizing</div>
-        <div className="nav-menu">Removal</div>
         <div className="nav-menu">FeedBack</div>
         <Link
           style={{ textDecoration: "none", color: "black" }}

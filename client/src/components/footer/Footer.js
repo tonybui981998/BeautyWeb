@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-end">
-        Copyright 2023 by web4s - All right Recived
+        Copyright 2023 by Tony - All right Recived
       </div>
     </div>
   );

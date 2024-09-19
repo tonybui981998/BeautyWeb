@@ -1,0 +1,100 @@
+.contact-details {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  //  border: 1px solid red;
+  align-items: center;
+  .detais-top {
+    padding-top: 35px;
+    display: flex;
+    //   border: 1px solid black;
+    margin: auto;
+    .infor-tittle {
+      //  border: 1px solid red;
+      width: 600px;
+      background-color: white;
+
+      .tittle {
+        margin: 80px 0 0 20px;
+        font-size: 28px;
+        font-weight: 550;
+        z-index: 500;
+      }
+      .address,
+      .phone,
+      .email {
+        margin: 20px 0 0 20px;
+        font-size: 18px;
+        z-index: 300;
+      }
+    }
+    .map {
+      iframe {
+        width: 600px;
+        height: 440px;
+        outline: none;
+      }
+    }
+  }
+  .detais-bottom {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    // background-color: white;
+    .botton-img {
+      width: fit-content;
+      height: fit-content;
+      img {
+        width: 600px;
+        height: 440px;
+        //  object-fit: contain;
+      }
+    }
+    .botton-form {
+      background-color: white;
+      width: 600px;
+
+      .botton-title {
+        font-size: 28px;
+        font-weight: 550;
+        z-index: 500;
+        margin: 60px 0 0 20px;
+      }
+      .main-form {
+        margin: 20px 15px 0 20px;
+        //  border: 1px solid red;
+        input {
+          margin-top: 15px;
+          width: 95%;
+          font-size: 15px;
+          padding: 12px 0;
+          border: 1px solid rgb(215, 210, 210);
+          z-index: 1000;
+          outline: none;
+        }
+        textarea {
+          width: 94.4%;
+          margin-top: 15px;
+          height: 45px;
+        }
+        button {
+          margin-top: 15px;
+          width: 95.6%;
+          height: 45px;
+          background-color: black;
+          color: white;
+          font-weight: 500;
+          font-size: 15px;
+          font-weight: 500;
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            border: 1px solid #b89468;
+            background: white;
+            color: #b89468;
+          }
+        }
+      }
+    }
+  }
+}
