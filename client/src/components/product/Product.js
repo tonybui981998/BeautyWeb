@@ -3,6 +3,7 @@ import { getAllProduct } from "../service/APIservice";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import ProdcutHeader from "./prodcutHeader/ProdcutHeader";
 import ProdcutDisplay from "./prodcutDisplay/ProdcutDisplay";
+import ProdcutMessage from "./productMessage/ProdcutMessage";
 
 const Product = () => {
   const [valueLocation, setValueLocation] = useState("");
@@ -37,6 +38,7 @@ const Product = () => {
     <div>
       <ProdcutHeader headername={valueLocation} />
       <ProdcutDisplay headername={valueLocation} />
+      <ProdcutMessage headername={valueLocation} />
     </div>
   );
 };
