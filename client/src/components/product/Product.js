@@ -4,6 +4,7 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import ProdcutHeader from "./prodcutHeader/ProdcutHeader";
 import ProdcutDisplay from "./prodcutDisplay/ProdcutDisplay";
 import ProdcutMessage from "./productMessage/ProdcutMessage";
+import Footer from "../footer/Footer";
 
 const Product = () => {
   const [valueLocation, setValueLocation] = useState("");
@@ -39,6 +40,7 @@ const Product = () => {
       <ProdcutHeader headername={valueLocation} />
       <ProdcutDisplay headername={valueLocation} />
       <ProdcutMessage headername={valueLocation} />
+      <Footer />
     </div>
   );
 };
