@@ -6,6 +6,7 @@ import ContactUs from "./components/page/ContactUs";
 import SerumProduct from "./components/page/SerumProduct";
 import Moisturizing from "./components/page/Moisturizing";
 import Remover from "./components/page/Remover";
+import ProductItem from "./components/page/ProductItem";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/serum" element={<SerumProduct />} />
           <Route path="/moisturizing" element={<Moisturizing />} />
           <Route path="/removal" element={<Remover />} />
+          <Route path={`/Product`} element={<ProductItem />} />
         </Routes>
       </BrowserRouter>
     </>

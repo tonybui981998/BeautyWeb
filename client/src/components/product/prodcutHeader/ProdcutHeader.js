@@ -7,7 +7,7 @@ const ProdcutHeader = ({ headername }) => {
   console.log(headername);
   return (
     <div className="contact-header">
-      <div className="contact-tittle">Contact Us</div>
+      <div className="contact-tittle">{headername}</div>
       <div className="contact-child">
         <Link to={"/"} className="contact-home">
           HomePage

@@ -4,6 +4,8 @@ export const ShopContext = createContext();
 
 const ShopContextProvider = ({ children }) => {
   const [allProdcutDB, setAllProdcutDB] = useState();
+  const [getProdcutStore, setGetProductStore] = useState("");
+  const [getLocation, setGetlocation] = useState("");
   const getAllProdcutDB = async () => {
     let Products = await getAllProduct();
     const arrayProdcut = Products.data.DT.DT;
@@ -12,7 +14,13 @@ const ShopContextProvider = ({ children }) => {
   useEffect(() => {
     getAllProdcutDB();
   }, []);
-  const value = { allProdcutDB };
+  const value = {
+    allProdcutDB,
+    getProdcutStore,
+    setGetProductStore,
+    getLocation,
+    setGetlocation,
+  };
   return <ShopContext.Provider value={value}>{children}</ShopContext.Provider>;
 };
 export default ShopContextProvider;
